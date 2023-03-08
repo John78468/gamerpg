@@ -3,7 +3,11 @@
 one:
   title: MyString
   content: MyText
+  choice: 1
+  consequence: 1
 
 two:
   title: MyString
   content: MyText
+  choice: 1
+  consequence: 1

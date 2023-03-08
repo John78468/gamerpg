@@ -10,12 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_07_161108) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_08_124049) do
   create_table "chapitres", force: :cascade do |t|
     t.string "title"
     t.text "content"
+    t.integer "choice"
+    t.integer "consequence"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["title"], name: "index_chapitres_on_title", unique: true
   end
 
   create_table "users", force: :cascade do |t|
